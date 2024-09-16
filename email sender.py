@@ -13,6 +13,7 @@ subject = "im testing sme pooiomething sorry"
 body = """ 
 when you see this text or call me 
 """
+#to do this one need to undersend ssl and smtlip
 
 em = EmailMessage()
 em['from'] = email_sender
@@ -28,3 +29,4 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
     smtp.login(email_sender, email_password)
     smtp.sendmail(email_sender, email_receiver, em.as_string())
 
+# this project helps in later projects. 
